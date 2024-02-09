@@ -7,14 +7,13 @@ const jwt = require('jsonwebtoken');
 
 
 
-//const secretKey = 'cha-secret-key';
 const { secretKey } = require('./secret');
 
 const router = express.Router();
 
    
 // Register endpoint
-//const bcrypt = require('bcrypt');
+
 
 router.post('/register', async (req, res) => {
   const { userId, name, password, username } = req.body; // Change email to username here
