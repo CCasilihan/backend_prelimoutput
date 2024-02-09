@@ -9,7 +9,7 @@ const { secretKey } = require('./secret');
 const router = express.Router();
 
 // Define URL prefix
-const URL_PREFIX = '/api';
+const URL_PREFIX = require ('./api');
 
 // Register endpoint
 router.post(URL_PREFIX + '/register', async (req, res) => {
